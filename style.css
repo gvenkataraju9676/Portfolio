@@ -1,0 +1,237 @@
+body{
+margin: 0px;
+}
+/* body header*/
+#body-header{
+  height:65vh;;
+  background-image: url("image/pic6.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  opacity:1;
+}
+/* horizontal list */
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+}
+.horizontal-list li a:hover{
+    color:lightgray;
+    border-bottom: 1px solid green;
+    transition:color 0.5s, border-bottom 4s;
+}
+.text-center
+{
+    text-align: center;
+}
+/* Section */
+.about{
+    height:75vh;
+    width: 80%;
+    position: relative;
+}
+#my-name{
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+.social-icons li a img{
+    height: 20px;
+    font-size: 1rem;
+}
+.social-icons li a img:hover{
+    box-shadow: 0px 0px 6px 6px lightskyblue;
+}
+
+.my-image{
+    height: 12rem;
+    width:12rem;
+    margin: auto;
+    margin-top: -15vh;
+}
+.my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 6px 6px lightblue;
+}
+#about-para{
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    font-size: 1.1rem;
+}
+@media screen and (max-width:1500px) {
+    #about-para{
+        height:auto;
+        width: 80%;
+    }
+    #about{
+        height:auto;
+        width:80%;
+        position: relative;
+    }
+    #body-header{
+        height:50vh;
+        background-image: url("image/pic6.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+        opacity:1;
+      }
+}
+
+
+/* Section */
+section{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+section:nth-child(2n)
+{
+    background-color: lightgrey;
+}
+section:nth-child(2n+1)
+{
+    background-color:white;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+}
+.skill-img{
+    height: 40px;
+    width: 40px;
+}
+.skills-display{
+    height:300px;
+    width:auto;
+    margin: 20px 300px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px 3px  rgb(235, 210, 70);
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.skill-progress{
+    height:30px;
+    width: 200px;
+    background-color: lightblue;
+    border-radius:20px 20px;
+    border: 2px solid;
+
+}
+.tablet {
+    height: inherit;
+    background-color:rgb(52, 164, 52);
+    border-radius: 20px 0px 0px 20px;
+}
+.c{
+    width: 80%;
+}
+.OS{
+    width: 65%;
+}
+.HTML{
+    width: 70%;
+}
+.CSS{
+    width: 80%;
+}
+.DSA{
+    width: 90%;
+}
+.DBMS{
+    width: 70%;
+}
+.SQL{
+    width: 85%;
+}
+.skill-name span {
+    font-weight: 700;
+    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+/* Work experiecne */
+#my-ex{
+    text-align: center;
+}
+.timeline{
+    position: relative;
+    height:inherit;
+    width:75%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 5px rgb(235, 210, 70);
+    margin: 5px 300px ;
+}
+.timeline-box{
+    position: relative;
+    height: 145px;
+    border: 2px solid black;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    background-image: linear-gradient(lightblue,lightgreen);
+}
+.timeline-box:nth-child(2n)
+{
+    left: 53%; 
+}
+.timeline-divider{
+    position: absolute;
+    height: 85%;
+    width: 0px;
+    border: 1px dotted black;
+    top: 40px;
+    left :50%;
+}
+@media screen and (max-width:600px) {
+    .timeline-divider{
+        left :3%;
+    }
+    .timeline-box{
+        left: 10%;
+    }
+    .timeline-box:nth-child(2n)
+    {
+    left:10%; 
+    }
+}
+.timeline-traveller{
+    position: sticky;
+    top: 25%;
+}
+h3{
+    text-align: center;
+    font-weight: 400;
+}
+.inner-timeline-box{
+    height:80px;
+    width: 350px;
+    margin-left: 40px;
+    
+}
